@@ -31,7 +31,7 @@ const CardDefault = ({item}) => {
         </Typography>
 
       </CardBody>
-    </Card>
+            </Card>
         </Link>
     );
 };

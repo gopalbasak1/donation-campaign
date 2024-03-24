@@ -7,7 +7,7 @@ const Banner = () => {
     const onChange = ({ target }) => setEmail(target.value);
 
     return (
-        <div className='h-[450px] relative flex flex-col justify-center items-center border border-green-500'>
+        <div className='h-[450px] relative flex flex-col justify-center items-center'>
 
         <div className="absolute inset-0 bg-[url('/Images/bg.png')] bg-cover bg-center bg-no-repeat opacity-10">
 
