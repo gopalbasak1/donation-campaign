@@ -1,10 +1,9 @@
 import { Button, Input, Typography } from '@material-tailwind/react';
 import React from 'react';
 
-const Banner = () => {
+const Banner = ({setValue, handleSearch}) => {
 
-    const [email, setEmail] = React.useState("");
-    const onChange = ({ target }) => setEmail(target.value);
+    
 
     return (
         <div className='h-[450px] relative flex flex-col justify-center items-center'>
@@ -19,8 +18,7 @@ const Banner = () => {
             <Input
                 type="email"
                 label="Email Address"
-                value={email}
-                onChange={onChange}
+                onChange={(e)=>setValue(e.target.value)}
                 className="pr-20"
                 containerProps={{
                 className: "min-w-0",
@@ -29,6 +27,7 @@ const Banner = () => {
             <Button
                 size="sm"
                 color="red"
+                onClick={handleSearch}
                 className="!absolute right-1 top-1 rounded"
             >
                 Search
