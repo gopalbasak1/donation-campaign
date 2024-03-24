@@ -12,6 +12,7 @@ import {
     Button,
   } from "@material-tailwind/react";
 import { saveToLocalStorage } from '../../Utility/localStorage';
+import CustomSpinner from '../../components/CustomSpinner/CustomSpinner';
 
 const DonationDetails = () => {
 
@@ -35,6 +36,10 @@ const DonationDetails = () => {
     },[data, idInt]);
  
     const {picture, title,description,price, text_button_bg} = singleData || {} ;
+
+    if(loading){
+      return <CustomSpinner></CustomSpinner>
+    }
 
     return (
           <Card className="mt-12 w-[1470px] rounded-md shadow-none lg:px-20 overflow-hidden mx-auto">

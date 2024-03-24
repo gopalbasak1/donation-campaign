@@ -1,9 +1,12 @@
 import CardDefault from "../Card/CardDefault";
+import CustomSpinner from "../CustomSpinner/CustomSpinner";
 
 
-const CategoryList = ({filteredData}) => {
+const CategoryList = ({loading,filteredData}) => {
 
-   
+   if(loading){
+    return <CustomSpinner></CustomSpinner>
+   }
     
 
     return (
