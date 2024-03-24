@@ -4,7 +4,7 @@ import { getFormLocalStorage } from '../Utility/localStorage';
 const UseLocalStorage = () => {
 
     const [localData, setLocalData] = useState([]);
-    console.log(localData);
+    //console.log(localData);
     useEffect(()=>{
         setLocalData(getFormLocalStorage());
     },[])

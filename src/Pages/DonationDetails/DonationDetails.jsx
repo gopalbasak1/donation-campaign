@@ -51,7 +51,7 @@ const DonationDetails = () => {
       >
         <img className='w-full rounded-md h-[550px]'
           src={picture}
-          alt={title}
+          
         />
 
         <div className='absolute bottom-0 bg-opacity-40 bg-black w-full h-28 pl-8 '>
@@ -65,12 +65,16 @@ const DonationDetails = () => {
 
       </CardHeader>
       <CardBody>
-        <Typography className='text-4xl font-bold' variant="h2" color="black">
-          {title}
-        </Typography>
-        <Typography variant="lead" color="gray" className="mt-3 font-normal text-[16px]">
-         {description}
-        </Typography>
+
+        <div>
+        <h2 className='text-4xl font-bold text-black'>{title}</h2>
+        </div>
+
+        <div>
+        <h2 className='mt-3 font-normal text-[16px] text-[#515151]'>{description}</h2>
+        </div>
+
+
       </CardBody>
       
     </Card>

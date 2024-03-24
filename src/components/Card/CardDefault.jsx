@@ -15,7 +15,7 @@ const CardDefault = ({item}) => {
 
     return (
         <Link to={`/donation-details/${id}`}>
-            <Card style={{backgroundColor: card_bg}} className="mt-6 overflow-hidden ">
+            <Card style={{backgroundColor: card_bg}} className="mt-6 overflow-hidden h-[283px]">
       <CardHeader color="blue-gray" className="relative rounded-none m-0">
         <img
           src={picture}
