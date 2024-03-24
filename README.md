@@ -1,1 +1,1 @@
-Live Website: https://donation-campaign-rho.vercel.app/statistics
+Live Website: https://donation-campaign-rho.vercel.app/
